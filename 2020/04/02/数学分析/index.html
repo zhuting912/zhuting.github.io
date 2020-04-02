@@ -22,13 +22,13 @@
 
   <meta name="description" content="1.对数函数$f\left(x\right)&#x3D;log_ax$，当$a$取何值时，$f\left(x\right)$在$x&#x3D;1$处的导数为1？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数学分析.md">
+<meta property="og:title" content="数学分析">
 <meta property="og:url" content="http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="MiaoCubeBlog">
 <meta property="og:description" content="1.对数函数$f\left(x\right)&#x3D;log_ax$，当$a$取何值时，$f\left(x\right)$在$x&#x3D;1$处的导数为1？">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-02T04:12:47.000Z">
-<meta property="article:modified_time" content="2020-04-02T04:41:29.628Z">
+<meta property="article:modified_time" content="2020-04-02T05:07:05.159Z">
 <meta property="article:author" content="MiaoCube">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="机器学习">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>数学分析.md | MiaoCubeBlog</title>
+  <title>数学分析 | MiaoCubeBlog</title>
   
 
 
@@ -77,9 +77,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<link rel="alternate" href="/atom.xml" title="MiaoCubeBlog" type="application/atom+xml"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<link rel="alternate" href="/atom.xml" title="MiaoCubeBlog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -182,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          数学分析.md
+          数学分析
         </h1>
 
         <div class="post-meta">
@@ -193,7 +193,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-04-02 12:12:47 / Modified: 12:41:29" itemprop="dateCreated datePublished" datetime="2020-04-02T12:12:47+08:00">2020-04-02</time>
+              <time title="Created: 2020-04-02 12:12:47 / Modified: 13:07:05" itemprop="dateCreated datePublished" datetime="2020-04-02T12:12:47+08:00">2020-04-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -217,25 +217,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1">1.对数函数<span class="math inline">\(f\left(x\right)=log_ax\)</span>，当<span class="math inline">\(a\)</span>取何值时，<span class="math inline">\(f\left(x\right)\)</span>在<span class="math inline">\(x=1\)</span>处的导数为1？</h5>
+        <h5 id="对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1">对数函数<span class="math inline">\(f\left(x\right)=log_ax\)</span>，当<span class="math inline">\(a\)</span>取何值时，<span class="math inline">\(f\left(x\right)\)</span>在<span class="math inline">\(x=1\)</span>处的导数为1？</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\frac{f\left(x+\Delta x\right)+f\left(x\right)}{\Delta x}=\frac{log_a\left(x+\Delta x\right)-log_a(x)}{\Delta x}</span><br><span class="line">=\frac{log_a(\frac{x+\Delta x}{x})}{\Delta x}</span><br><span class="line">=log_a(\frac{x+\Delta x}{x})^{\frac{1}{\Delta x}}</span><br><span class="line">=log_a(1+\Delta x)^{\frac{1}{\Delta x}}=1</span><br><span class="line"></span><br><span class="line">\therefore \lim_{\Delta x \to 0}(1+\Delta x)^{\frac{1}{\Delta x}}=a</span><br><span class="line"></span><br><span class="line">\therefore a=e</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="两个特殊的极限">2.两个特殊的极限</h5>
+<h5 id="两个特殊的极限">两个特殊的极限</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\lim_{n \to +\infty}(1+\frac{1}{n})^n=e</span><br><span class="line"></span><br><span class="line">\lim_{x \to 0}\frac{sinx}{x}=1</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="已知函数fxxxx0求fx的最小值">3.已知函数<code>$f(x)=x^x$</code>，<code>$x&gt;0$</code>，求<code>$f(x)$</code>的最小值。</h5>
+<h5 id="已知函数fxxxx0求fx的最小值">已知函数<span class="math inline">\(f(x)=x^x\)</span>，<span class="math inline">\(x&gt;0\)</span>，求<span class="math inline">\(f(x)\)</span>的最小值。</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">t=x^x</span><br><span class="line"></span><br><span class="line">\therefore \ln t=x\ln x</span><br><span class="line"></span><br><span class="line">\frac{1}{t}t^\prime=\ln x+1</span><br><span class="line"></span><br><span class="line">\because t_\prime=0</span><br><span class="line"></span><br><span class="line">\therefore 0=\ln x+1</span><br><span class="line"></span><br><span class="line">x=e^{-1}</span><br><span class="line"></span><br><span class="line">t=e^{-\frac{1}{e}}</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="tyler公式">4.Tyler公式</h5>
+<h5 id="tyler公式">Tyler公式</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{n}(x_0)}{n!}(x-x_0)^n+R_n(x)</span><br><span class="line"></span><br><span class="line">f(x)=f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x)^2+\cdots+\frac{f^{n}(0)}{n!}(x)^n+R_n(x)</span><br></pre></td></tr></tbody></table></figure>
 <h6 id="tyler公式的应用-计算ex">Tyler公式的应用-==计算<code>$e^x$</code>==</h6>
-<h5 id="积分的应用">5.积分的应用</h5>
+<h5 id="积分的应用">积分的应用</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\ln N!=\sum_{i=1}^N\ln i\approx\int_{i=1}^N\ln xdx=x\ln x\mid_{x=1}^N-\int_{i=1}^Nxd\ln x=N\ln N-N+1=N\ln N-N</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="方向导数">6.方向导数</h5>
+<h5 id="方向导数">方向导数</h5>
 <p> 如果函数<code>$z=f(x,y)$</code>在点<code>$P(x,y)$</code>是可微分的，那么函数在该点沿任意方向<code>$L$</code>的方向导数都存在，且<code>$\frac{\partial f}{\partial l}=\frac{\partial f}{\partial x}\cos\psi+\frac{\partial f}{\partial y}\sin\psi$</code>，其中<code>$\psi$</code>是<code>$x$</code>轴到方向<code>$L$</code>的转角。</p>
-<h5 id="梯度">7.梯度</h5>
+<h5 id="梯度">梯度</h5>
 <p> 如果函数<code>$z=f(x,y)$</code>在平面区域<code>$D$</code>内有一阶连续偏导数，则对于每一个点<code>$P(x,y)\in D$</code>，向量<code>$(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})$</code>为函数<code>$z=f(x,y)$</code>在点<code>$P$</code>处的梯度，记做<code>$gradf(x,y)$</code>。==梯度方向是函数在该点变化最快的方向==。</p>
-<h5 id="gamma函数是阶乘在实数上的推广">8.<code>$\Gamma$</code>函数是阶乘在实数上的推广</h5>
+<h5 id="gamma函数是阶乘在实数上的推广"><span class="math inline">\(\Gamma\)</span>函数是阶乘在实数上的推广</h5>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}dt=(x-1)!</span><br><span class="line"></span><br><span class="line">\Gamma(x)=(x-1)\Gamma(x-1)</span><br><span class="line"></span><br><span class="line">\Gamma(1)=1</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="凸函数">9.凸函数</h5>
-<p> 若函数<code>$f$</code>的定义域<code>$D$</code>为凸集，且满足<code>$\forall x,y\in D,0\leq\theta\leq1$</code>，有<code>$f(\theta x+(1-\theta)y)\leq \theta f(x)+(1-\theta)f(y)$</code>，则函数<code>$f$</code>为凸函数。</p>
+<h5 id="凸函数">凸函数</h5>
+<p> 若函数<span class="math inline">\(f\)</span>的定义域<span class="math inline">\(D\)</span>为凸集，且满足<span class="math inline">\(\forall x,y\in D,0\leq\theta\leq1\)</span>，有<span class="math inline">\(f(\theta x+(1-\theta)y)\leq \theta f(x)+(1-\theta)f(y)\)</span>，则函数<span class="math inline">\(f\)</span>为凸函数。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -336,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1"><span class="nav-number">1.</span> <span class="nav-text">1.对数函数\(f\left(x\right)&#x3D;log_ax\)，当\(a\)取何值时，\(f\left(x\right)\)在\(x&#x3D;1\)处的导数为1？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#两个特殊的极限"><span class="nav-number">2.</span> <span class="nav-text">2.两个特殊的极限</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#已知函数fxxxx0求fx的最小值"><span class="nav-number">3.</span> <span class="nav-text">3.已知函数$f(x)&#x3D;x^x$，$x&gt;0$，求$f(x)$的最小值。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#tyler公式"><span class="nav-number">4.</span> <span class="nav-text">4.Tyler公式</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#tyler公式的应用-计算ex"><span class="nav-number">4.1.</span> <span class="nav-text">Tyler公式的应用-&#x3D;&#x3D;计算$e^x$&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#积分的应用"><span class="nav-number">5.</span> <span class="nav-text">5.积分的应用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方向导数"><span class="nav-number">6.</span> <span class="nav-text">6.方向导数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#梯度"><span class="nav-number">7.</span> <span class="nav-text">7.梯度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gamma函数是阶乘在实数上的推广"><span class="nav-number">8.</span> <span class="nav-text">8.$\Gamma$函数是阶乘在实数上的推广</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#凸函数"><span class="nav-number">9.</span> <span class="nav-text">9.凸函数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1"><span class="nav-number">1.</span> <span class="nav-text">对数函数\(f\left(x\right)&#x3D;log_ax\)，当\(a\)取何值时，\(f\left(x\right)\)在\(x&#x3D;1\)处的导数为1？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#两个特殊的极限"><span class="nav-number">2.</span> <span class="nav-text">两个特殊的极限</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#已知函数fxxxx0求fx的最小值"><span class="nav-number">3.</span> <span class="nav-text">已知函数\(f(x)&#x3D;x^x\)，\(x&gt;0\)，求\(f(x)\)的最小值。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#tyler公式"><span class="nav-number">4.</span> <span class="nav-text">Tyler公式</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#tyler公式的应用-计算ex"><span class="nav-number">4.1.</span> <span class="nav-text">Tyler公式的应用-&#x3D;&#x3D;计算$e^x$&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#积分的应用"><span class="nav-number">5.</span> <span class="nav-text">积分的应用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方向导数"><span class="nav-number">6.</span> <span class="nav-text">方向导数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#梯度"><span class="nav-number">7.</span> <span class="nav-text">梯度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gamma函数是阶乘在实数上的推广"><span class="nav-number">8.</span> <span class="nav-text">\(\Gamma\)函数是阶乘在实数上的推广</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#凸函数"><span class="nav-number">9.</span> <span class="nav-text">凸函数</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
