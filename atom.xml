@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MiaoCubeBlog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-02T03:56:00.775Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>MiaoCube</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>写在前面</title>
+    <link href="http://yoursite.com/2020/04/01/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/"/>
+    <id>http://yoursite.com/2020/04/01/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</id>
+    <published>2020-04-01T10:45:08.000Z</published>
+    <updated>2020-04-02T03:56:00.775Z</updated>
+    
+    <content type="html"><![CDATA[<p>愚人节誓言，坚持写点什么。谁知道能坚持多久<span class="emoji" alias="dog" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f436.png?v8">🐶</span></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;愚人节誓言，坚持写点什么。谁知道能坚持多久&lt;span class=&quot;emoji&quot; alias=&quot;dog&quot; style=&quot;&quot; fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/unicode/1f
+      
+    
+    </summary>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/categories/%E5%BF%83%E6%83%85/"/>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+</feed>
