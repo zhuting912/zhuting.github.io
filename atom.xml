@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MiaoCubeBlog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-04-02T04:41:29.628Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>MiaoCube</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数学分析.md</title>
+    <link href="http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</id>
+    <published>2020-04-02T04:12:47.000Z</published>
+    <updated>2020-04-02T04:41:29.628Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1">1.对数函数<span class="math inline">\(f\left(x\right)=log_ax\)</span>，当<span class="math inline">\(a\)</span>取何值时，<span class="math inline">\(f\left(x\right)\)</span>在<span class="math inline">\(x=1\)</span>处的导数为1？</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\frac{f\left(x+\Delta x\right)+f\left(x\right)}{\Delta x}=\frac{log_a\left(x+\Delta x\right)-log_a(x)}{\Delta x}</span><br><span class="line">=\frac{log_a(\frac{x+\Delta x}{x})}{\Delta x}</span><br><span class="line">=log_a(\frac{x+\Delta x}{x})^{\frac{1}{\Delta x}}</span><br><span class="line">=log_a(1+\Delta x)^{\frac{1}{\Delta x}}=1</span><br><span class="line"></span><br><span class="line">\therefore \lim_{\Delta x \to 0}(1+\Delta x)^{\frac{1}{\Delta x}}=a</span><br><span class="line"></span><br><span class="line">\therefore a=e</span><br></pre></td></tr></tbody></table></figure><h5 id="两个特殊的极限">2.两个特殊的极限</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\lim_{n \to +\infty}(1+\frac{1}{n})^n=e</span><br><span class="line"></span><br><span class="line">\lim_{x \to 0}\frac{sinx}{x}=1</span><br></pre></td></tr></tbody></table></figure><h5 id="已知函数fxxxx0求fx的最小值">3.已知函数<code>$f(x)=x^x$</code>，<code>$x&gt;0$</code>，求<code>$f(x)$</code>的最小值。</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">t=x^x</span><br><span class="line"></span><br><span class="line">\therefore \ln t=x\ln x</span><br><span class="line"></span><br><span class="line">\frac{1}{t}t^\prime=\ln x+1</span><br><span class="line"></span><br><span class="line">\because t_\prime=0</span><br><span class="line"></span><br><span class="line">\therefore 0=\ln x+1</span><br><span class="line"></span><br><span class="line">x=e^{-1}</span><br><span class="line"></span><br><span class="line">t=e^{-\frac{1}{e}}</span><br></pre></td></tr></tbody></table></figure><h5 id="tyler公式">4.Tyler公式</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{n}(x_0)}{n!}(x-x_0)^n+R_n(x)</span><br><span class="line"></span><br><span class="line">f(x)=f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x)^2+\cdots+\frac{f^{n}(0)}{n!}(x)^n+R_n(x)</span><br></pre></td></tr></tbody></table></figure><h6 id="tyler公式的应用-计算ex">Tyler公式的应用-==计算<code>$e^x$</code>==</h6><h5 id="积分的应用">5.积分的应用</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\ln N!=\sum_{i=1}^N\ln i\approx\int_{i=1}^N\ln xdx=x\ln x\mid_{x=1}^N-\int_{i=1}^Nxd\ln x=N\ln N-N+1=N\ln N-N</span><br></pre></td></tr></tbody></table></figure><h5 id="方向导数">6.方向导数</h5><p> 如果函数<code>$z=f(x,y)$</code>在点<code>$P(x,y)$</code>是可微分的，那么函数在该点沿任意方向<code>$L$</code>的方向导数都存在，且<code>$\frac{\partial f}{\partial l}=\frac{\partial f}{\partial x}\cos\psi+\frac{\partial f}{\partial y}\sin\psi$</code>，其中<code>$\psi$</code>是<code>$x$</code>轴到方向<code>$L$</code>的转角。</p><h5 id="梯度">7.梯度</h5><p> 如果函数<code>$z=f(x,y)$</code>在平面区域<code>$D$</code>内有一阶连续偏导数，则对于每一个点<code>$P(x,y)\in D$</code>，向量<code>$(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})$</code>为函数<code>$z=f(x,y)$</code>在点<code>$P$</code>处的梯度，记做<code>$gradf(x,y)$</code>。==梯度方向是函数在该点变化最快的方向==。</p><h5 id="gamma函数是阶乘在实数上的推广">8.<code>$\Gamma$</code>函数是阶乘在实数上的推广</h5><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}dt=(x-1)!</span><br><span class="line"></span><br><span class="line">\Gamma(x)=(x-1)\Gamma(x-1)</span><br><span class="line"></span><br><span class="line">\Gamma(1)=1</span><br></pre></td></tr></tbody></table></figure><h5 id="凸函数">9.凸函数</h5><p> 若函数<code>$f$</code>的定义域<code>$D$</code>为凸集，且满足<code>$\forall x,y\in D,0\leq\theta\leq1$</code>，有<code>$f(\theta x+(1-\theta)y)\leq \theta f(x)+(1-\theta)f(y)$</code>，则函数<code>$f$</code>为凸函数。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      1.对数函数$f\left(x\right)=log_ax$，当$a$取何值时，$f\left(x\right)$在$x=1$处的导数为1？
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="http://yoursite.com/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="数学" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数学分析" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写在前面</title>
+    <link href="http://yoursite.com/2020/04/01/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/"/>
+    <id>http://yoursite.com/2020/04/01/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</id>
+    <published>2020-04-01T10:45:08.000Z</published>
+    <updated>2020-04-02T03:56:00.775Z</updated>
+    
+    <content type="html"><![CDATA[<p>愚人节誓言，坚持写点什么。谁知道能坚持多久<span class="emoji" data-alias="dog" style="" data-fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f436.png?v8">🐶</span></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;愚人节誓言，坚持写点什么。谁知道能坚持多久&lt;span class=&quot;emoji&quot; data-alias=&quot;dog&quot; style=&quot;&quot; data-fallback-src=&quot;https://github.githubassets.com/images/icons/emoji/
+      
+    
+    </summary>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/categories/%E5%BF%83%E6%83%85/"/>
+    
+    
+      <category term="心情" scheme="http://yoursite.com/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+</feed>
