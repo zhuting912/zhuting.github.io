@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-02T05:07:05.159Z</updated>
+  <updated>2020-04-21T06:11:18.937Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>线性代数基础</title>
+    <link href="http://yoursite.com/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/"/>
+    <id>http://yoursite.com/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/</id>
+    <published>2020-04-13T14:22:05.000Z</published>
+    <updated>2020-04-21T06:11:18.937Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="additon-and-multiplication">Additon and multiplication</h3><p>  A vector can be anything where there's a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，<span class="math inline">\(\begin{bmatrix} 1\\ 2\\ \end{bmatrix}\)</span>从原点沿<span class="math inline">\(x\)</span>正方向走1单位长度，沿<span class="math inline">\(y\)</span>正方向走2单位长度。</p><p>  <em>Vector addition</em> is matching up their terms and adding each one together. <span class="math display">\[\begin{bmatrix}    1\\    2\\\end{bmatrix}+\begin{bmatrix}    3\\    -1\\\end{bmatrix}=\begin{bmatrix}    1+3\\    2+(-1)\\\end{bmatrix}\]</span>   <em>Multiplication by a number</em> calls scaling a vector. 拉伸或者压缩 <span class="math display">\[3*\begin{bmatrix}2\\-1\\\end{bmatrix}=\begin{bmatrix}3*2\\3*(-1)\\\end{bmatrix}\]</span></p><h3 id="linear-combination-span-and-basis-vectors">Linear combination, span and basis vectors</h3><p>  The vector describe the sum of two scaled vectors.<span class="math inline">\(\begin{bmatrix} 2\\ -3\ \end{bmatrix}=2*\begin{bmatrix}1\\0\end{bmatrix}+(-3)*\begin{bmatrix}0\\1 \end{bmatrix}\)</span></p><p>  <span class="math inline">\(\begin{bmatrix}1\\0\end{bmatrix}\)</span>and <span class="math inline">\(\begin{bmatrix}0\\1\end{bmatrix}\)</span> is the basis of a coordinate system坐标系的基</p><p>  The span of <span class="math inline">\(v\)</span> and <span class="math inline">\(w\)</span> is the set of all their linear combinations a<span class="math inline">\(v\)</span>+b<span class="math inline">\(w\)</span>.一个非零向量可以张成一条直线，再增加一个向量，如果它落在第一个向量上，则这两个向量张成的空间仍是一条直线，新加的向量的空间扩张并没有做贡献，也可以说这两个向量共线linearly dependent.</p><p>  The basis of a vector space is a set of linearly independent vectors that span the full space.向量空间的基是一组线性无关的向量，它们可以张成整个空间。</p><h3 id="linear-transformations-and-matrices">Linear transformations and matrices</h3><p>  Transformation可以看成是函数，输入向量到输出向量。</p><p>  Linear means "line remains line,without getting curved,and origin remains fixed in place". <em>Grid line remains parallel and evenly spaced</em>.如何描述变换？原空间的向量通过线性变换，会落在哪个地方？我们只需要考虑基向量就行。</p><p>  假设基向量<span class="math inline">\(i\begin{bmatrix}1\\0\end{bmatrix}\)</span>、<span class="math inline">\(j \begin{bmatrix}0\\1\end{bmatrix}\)</span>变换后对应的向量分别为<span class="math inline">\(\begin{bmatrix}1\\-2\end{bmatrix}\)</span>、<span class="math inline">\(\begin{bmatrix}3\\0\end{bmatrix}\)</span>，则空间任一向量<span class="math inline">\(\begin{bmatrix}x\\y\end{bmatrix}\)</span>经变换后应落在 <span class="math display">\[\begin{bmatrix}x\\y\end{bmatrix}-&gt; x\begin{bmatrix}1\\-2\end{bmatrix}+y\begin{bmatrix}3\\0\end{bmatrix}=\begin{bmatrix}1x+3y\\-2y+0y\end{bmatrix}\]</span> 因此二维空间上的线性变换有4个数据控制：基向量<span class="math inline">\(\begin{bmatrix}1\\0\end{bmatrix}\)</span>变换后落在哪里、基向量<span class="math inline">\(\begin{bmatrix}0\\1\end{bmatrix}\)</span>变换后落在哪里。如果将这4个数子写成2*2矩阵<span class="math inline">\(\begin{bmatrix}1&amp;3\\-2&amp;0\end{bmatrix}\)</span>，每一列分别表示两个基向量变换后的位置。因此矩阵可以用来表示一次线性变换。考虑一般性： <span class="math display">\[\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=x\begin{bmatrix}a\\c\end{bmatrix}+y\begin{bmatrix}b\\d\end{bmatrix}=\begin{bmatrix}ax+by\\cx+dy\end{bmatrix}\]</span> 如果矩阵的两列是共线的，则表示将原来的二维空间张成了一维空间。</p><h3 id="matrix-multiplication">Matrix multiplication</h3><p>  复合变换<em>composition</em>：例如对一个向量先进行旋转变换<em>rotation</em>再进行复合剪裁变换<em>shear</em>。 <span class="math display">\[\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}(\begin{bmatrix}0&amp;-1\\1&amp;0\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix})=\begin{bmatrix}1&amp;-1\\1&amp;0\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}\]</span> 矩阵相乘的几何意义是两个线性变换相继作用。multiplying two matrices has the geometric meaning of applying one transformation then another。符号上是从由到左进行变换。 <span class="math display">\[\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}\begin{bmatrix}0&amp;-1\\1&amp;0\end{bmatrix}=\begin{bmatrix}1&amp;-1\\1&amp;0\end{bmatrix}\]</span> 通过线性变化计算出矩阵乘法的结果： <span class="math display">\[\begin{bmatrix}2&amp;-1\\1&amp;3\end{bmatrix}\begin{bmatrix}1&amp;-1\\2&amp;1\end{bmatrix}\]</span> 原来的基向量<span class="math inline">\(i\)</span>先移动到了<span class="math inline">\(\begin{bmatrix}1\\2\end{bmatrix}\)</span>，该向量再通过左边的变换矩阵，变换到<span class="math inline">\(1*\begin{bmatrix}2\\1\end{bmatrix}+2*\begin{bmatrix}-1\\3\end{bmatrix}=\begin{bmatrix}0\\7\end{bmatrix}\)</span>，同样基向量<span class="math inline">\(j\)</span>通过两次变换移动到了<span class="math inline">\(\begin{bmatrix}-3\\2\end{bmatrix}\)</span>，即矩阵乘法结果为<span class="math inline">\(\begin{bmatrix}0&amp;-3\\7&amp;2\end{bmatrix}\)</span>。</p><p>交换律：<span class="math inline">\(AB\not=BA\)</span> ,First rotation the shear doesn't equal to first shear then rotation</p><p>结合律associativity：<span class="math inline">\((AB)C=A(BC)\)</span></p><p>以上同样可以扩展到三维空间。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      A vector can be anything where there&#39;s a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，$\begin{bmatrix} 1\\ 2\\ \end{bmatrix}$从原点沿$x$正方向走1单位长度，沿$y$正方向走2单位长度。
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="http://yoursite.com/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+      <category term="数学" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="机器学习" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="线性代数" scheme="http://yoursite.com/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>数学分析</title>

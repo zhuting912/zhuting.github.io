@@ -20,22 +20,22 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1.对数函数$f\left(x\right)&#x3D;log_ax$，当$a$取何值时，$f\left(x\right)$在$x&#x3D;1$处的导数为1？">
+  <meta name="description" content="A vector can be anything where there&#39;s a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，$\begin{bmatrix} 1\\ 2\\ \end{bmatrix}$从原点沿$x$正方向走1单位长度，沿$y$正方向走">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数学分析">
-<meta property="og:url" content="http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/index.html">
+<meta property="og:title" content="线性代数基础">
+<meta property="og:url" content="http://yoursite.com/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="MiaoCubeBlog">
-<meta property="og:description" content="1.对数函数$f\left(x\right)&#x3D;log_ax$，当$a$取何值时，$f\left(x\right)$在$x&#x3D;1$处的导数为1？">
+<meta property="og:description" content="A vector can be anything where there&#39;s a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，$\begin{bmatrix} 1\\ 2\\ \end{bmatrix}$从原点沿$x$正方向走1单位长度，沿$y$正方向走">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-02T04:12:47.000Z">
-<meta property="article:modified_time" content="2020-04-02T05:07:05.159Z">
+<meta property="article:published_time" content="2020-04-13T14:22:05.000Z">
+<meta property="article:modified_time" content="2020-04-21T06:11:18.937Z">
 <meta property="article:author" content="MiaoCube">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="机器学习">
-<meta property="article:tag" content="数学分析">
+<meta property="article:tag" content="线性代数">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
+<link rel="canonical" href="http://yoursite.com/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>数学分析 | MiaoCubeBlog</title>
+  <title>线性代数基础 | MiaoCubeBlog</title>
   
 
 
@@ -169,7 +169,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -182,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          数学分析
+          线性代数基础
         </h1>
 
         <div class="post-meta">
@@ -191,10 +191,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-04-02 12:12:47 / Modified: 13:07:05" itemprop="dateCreated datePublished" datetime="2020-04-02T12:12:47+08:00">2020-04-02</time>
+              <time title="Created: 2020-04-13 22:22:05" itemprop="dateCreated datePublished" datetime="2020-04-13T22:22:05+08:00">2020-04-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-21 14:11:18" itemprop="dateModified" datetime="2020-04-21T14:11:18+08:00">2020-04-21</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -206,7 +212,7 @@
             </span>
 
           
-            <div class="post-description">1.对数函数$f\left(x\right)=log_ax$，当$a$取何值时，$f\left(x\right)$在$x=1$处的导数为1？</div>
+            <div class="post-description">A vector can be anything where there's a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，$\begin{bmatrix} 1\\ 2\\ \end{bmatrix}$从原点沿$x$正方向走1单位长度，沿$y$正方向走2单位长度。</div>
 
         </div>
       </header>
@@ -217,25 +223,65 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1">对数函数<span class="math inline">\(f\left(x\right)=log_ax\)</span>，当<span class="math inline">\(a\)</span>取何值时，<span class="math inline">\(f\left(x\right)\)</span>在<span class="math inline">\(x=1\)</span>处的导数为1？</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\frac{f\left(x+\Delta x\right)+f\left(x\right)}{\Delta x}=\frac{log_a\left(x+\Delta x\right)-log_a(x)}{\Delta x}</span><br><span class="line">=\frac{log_a(\frac{x+\Delta x}{x})}{\Delta x}</span><br><span class="line">=log_a(\frac{x+\Delta x}{x})^{\frac{1}{\Delta x}}</span><br><span class="line">=log_a(1+\Delta x)^{\frac{1}{\Delta x}}=1</span><br><span class="line"></span><br><span class="line">\therefore \lim_{\Delta x \to 0}(1+\Delta x)^{\frac{1}{\Delta x}}=a</span><br><span class="line"></span><br><span class="line">\therefore a=e</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="两个特殊的极限">两个特殊的极限</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\lim_{n \to +\infty}(1+\frac{1}{n})^n=e</span><br><span class="line"></span><br><span class="line">\lim_{x \to 0}\frac{sinx}{x}=1</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="已知函数fxxxx0求fx的最小值">已知函数<span class="math inline">\(f(x)=x^x\)</span>，<span class="math inline">\(x&gt;0\)</span>，求<span class="math inline">\(f(x)\)</span>的最小值。</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">t=x^x</span><br><span class="line"></span><br><span class="line">\therefore \ln t=x\ln x</span><br><span class="line"></span><br><span class="line">\frac{1}{t}t^\prime=\ln x+1</span><br><span class="line"></span><br><span class="line">\because t_\prime=0</span><br><span class="line"></span><br><span class="line">\therefore 0=\ln x+1</span><br><span class="line"></span><br><span class="line">x=e^{-1}</span><br><span class="line"></span><br><span class="line">t=e^{-\frac{1}{e}}</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="tyler公式">Tyler公式</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f(x)=f(x_0)+f^\prime(x_0)(x-x_0)+\frac{f^{\prime\prime}(x_0)}{2!}(x-x_0)^2+\cdots+\frac{f^{n}(x_0)}{n!}(x-x_0)^n+R_n(x)</span><br><span class="line"></span><br><span class="line">f(x)=f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x)^2+\cdots+\frac{f^{n}(0)}{n!}(x)^n+R_n(x)</span><br></pre></td></tr></tbody></table></figure>
-<h6 id="tyler公式的应用-计算ex">Tyler公式的应用-==计算<code>$e^x$</code>==</h6>
-<h5 id="积分的应用">积分的应用</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\ln N!=\sum_{i=1}^N\ln i\approx\int_{i=1}^N\ln xdx=x\ln x\mid_{x=1}^N-\int_{i=1}^Nxd\ln x=N\ln N-N+1=N\ln N-N</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="方向导数">方向导数</h5>
-<p> 如果函数<code>$z=f(x,y)$</code>在点<code>$P(x,y)$</code>是可微分的，那么函数在该点沿任意方向<code>$L$</code>的方向导数都存在，且<code>$\frac{\partial f}{\partial l}=\frac{\partial f}{\partial x}\cos\psi+\frac{\partial f}{\partial y}\sin\psi$</code>，其中<code>$\psi$</code>是<code>$x$</code>轴到方向<code>$L$</code>的转角。</p>
-<h5 id="梯度">梯度</h5>
-<p> 如果函数<code>$z=f(x,y)$</code>在平面区域<code>$D$</code>内有一阶连续偏导数，则对于每一个点<code>$P(x,y)\in D$</code>，向量<code>$(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})$</code>为函数<code>$z=f(x,y)$</code>在点<code>$P$</code>处的梯度，记做<code>$gradf(x,y)$</code>。==梯度方向是函数在该点变化最快的方向==。</p>
-<h5 id="gamma函数是阶乘在实数上的推广"><span class="math inline">\(\Gamma\)</span>函数是阶乘在实数上的推广</h5>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\Gamma(x)=\int_0^\infty t^{x-1}e^{-t}dt=(x-1)!</span><br><span class="line"></span><br><span class="line">\Gamma(x)=(x-1)\Gamma(x-1)</span><br><span class="line"></span><br><span class="line">\Gamma(1)=1</span><br></pre></td></tr></tbody></table></figure>
-<h5 id="凸函数">凸函数</h5>
-<p> 若函数<span class="math inline">\(f\)</span>的定义域<span class="math inline">\(D\)</span>为凸集，且满足<span class="math inline">\(\forall x,y\in D,0\leq\theta\leq1\)</span>，有<span class="math inline">\(f(\theta x+(1-\theta)y)\leq \theta f(x)+(1-\theta)f(y)\)</span>，则函数<span class="math inline">\(f\)</span>为凸函数。</p>
+        <h3 id="additon-and-multiplication">Additon and multiplication</h3>
+<p>  A vector can be anything where there's a sensible notion of adding two vectors and multiplying a vector by a number operations. 向量可看成运动，<span class="math inline">\(\begin{bmatrix} 1\\ 2\\ \end{bmatrix}\)</span>从原点沿<span class="math inline">\(x\)</span>正方向走1单位长度，沿<span class="math inline">\(y\)</span>正方向走2单位长度。</p>
+<p>  <em>Vector addition</em> is matching up their terms and adding each one together. <span class="math display">\[
+\begin{bmatrix}
+    1\\
+    2\\
+\end{bmatrix}
++
+\begin{bmatrix}
+    3\\
+    -1\\
+\end{bmatrix}
+=\begin{bmatrix}
+    1+3\\
+    2+(-1)\\
+\end{bmatrix}
+\]</span>   <em>Multiplication by a number</em> calls scaling a vector. 拉伸或者压缩 <span class="math display">\[
+3*
+\begin{bmatrix}
+2\\
+-1\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+3*2\\
+3*(-1)\\
+\end{bmatrix}
+\]</span></p>
+<h3 id="linear-combination-span-and-basis-vectors">Linear combination, span and basis vectors</h3>
+<p>  The vector describe the sum of two scaled vectors.<span class="math inline">\(\begin{bmatrix} 2\\ -3\ \end{bmatrix}=2*\begin{bmatrix}1\\0\end{bmatrix}+(-3)*\begin{bmatrix}0\\1 \end{bmatrix}\)</span></p>
+<p>  <span class="math inline">\(\begin{bmatrix}1\\0\end{bmatrix}\)</span>and <span class="math inline">\(\begin{bmatrix}0\\1\end{bmatrix}\)</span> is the basis of a coordinate system坐标系的基</p>
+<p>  The span of <span class="math inline">\(v\)</span> and <span class="math inline">\(w\)</span> is the set of all their linear combinations a<span class="math inline">\(v\)</span>+b<span class="math inline">\(w\)</span>.一个非零向量可以张成一条直线，再增加一个向量，如果它落在第一个向量上，则这两个向量张成的空间仍是一条直线，新加的向量的空间扩张并没有做贡献，也可以说这两个向量共线linearly dependent.</p>
+<p>  The basis of a vector space is a set of linearly independent vectors that span the full space.向量空间的基是一组线性无关的向量，它们可以张成整个空间。</p>
+<h3 id="linear-transformations-and-matrices">Linear transformations and matrices</h3>
+<p>  Transformation可以看成是函数，输入向量到输出向量。</p>
+<p>  Linear means "line remains line,without getting curved,and origin remains fixed in place". <em>Grid line remains parallel and evenly spaced</em>.如何描述变换？原空间的向量通过线性变换，会落在哪个地方？我们只需要考虑基向量就行。</p>
+<p>  假设基向量<span class="math inline">\(i\begin{bmatrix}1\\0\end{bmatrix}\)</span>、<span class="math inline">\(j \begin{bmatrix}0\\1\end{bmatrix}\)</span>变换后对应的向量分别为<span class="math inline">\(\begin{bmatrix}1\\-2\end{bmatrix}\)</span>、<span class="math inline">\(\begin{bmatrix}3\\0\end{bmatrix}\)</span>，则空间任一向量<span class="math inline">\(\begin{bmatrix}x\\y\end{bmatrix}\)</span>经变换后应落在 <span class="math display">\[
+\begin{bmatrix}x\\y\end{bmatrix}-&gt; 
+x\begin{bmatrix}1\\-2\end{bmatrix}+y\begin{bmatrix}3\\0\end{bmatrix}
+=\begin{bmatrix}1x+3y\\-2y+0y\end{bmatrix}
+\]</span> 因此二维空间上的线性变换有4个数据控制：基向量<span class="math inline">\(\begin{bmatrix}1\\0\end{bmatrix}\)</span>变换后落在哪里、基向量<span class="math inline">\(\begin{bmatrix}0\\1\end{bmatrix}\)</span>变换后落在哪里。如果将这4个数子写成2*2矩阵<span class="math inline">\(\begin{bmatrix}1&amp;3\\-2&amp;0\end{bmatrix}\)</span>，每一列分别表示两个基向量变换后的位置。因此矩阵可以用来表示一次线性变换。考虑一般性： <span class="math display">\[
+\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=
+x\begin{bmatrix}a\\c\end{bmatrix}+y\begin{bmatrix}b\\d\end{bmatrix}=
+\begin{bmatrix}ax+by\\cx+dy\end{bmatrix}
+\]</span> 如果矩阵的两列是共线的，则表示将原来的二维空间张成了一维空间。</p>
+<h3 id="matrix-multiplication">Matrix multiplication</h3>
+<p>  复合变换<em>composition</em>：例如对一个向量先进行旋转变换<em>rotation</em>再进行复合剪裁变换<em>shear</em>。 <span class="math display">\[
+\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}(\begin{bmatrix}0&amp;-1\\1&amp;0\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix})=
+\begin{bmatrix}1&amp;-1\\1&amp;0\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}
+\]</span> 矩阵相乘的几何意义是两个线性变换相继作用。multiplying two matrices has the geometric meaning of applying one transformation then another。符号上是从由到左进行变换。 <span class="math display">\[
+\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix}
+\begin{bmatrix}0&amp;-1\\1&amp;0\end{bmatrix}=
+\begin{bmatrix}1&amp;-1\\1&amp;0\end{bmatrix}
+\]</span> 通过线性变化计算出矩阵乘法的结果： <span class="math display">\[
+\begin{bmatrix}2&amp;-1\\1&amp;3\end{bmatrix}\begin{bmatrix}1&amp;-1\\2&amp;1\end{bmatrix}
+\]</span> 原来的基向量<span class="math inline">\(i\)</span>先移动到了<span class="math inline">\(\begin{bmatrix}1\\2\end{bmatrix}\)</span>，该向量再通过左边的变换矩阵，变换到<span class="math inline">\(1*\begin{bmatrix}2\\1\end{bmatrix}+2*\begin{bmatrix}-1\\3\end{bmatrix}=\begin{bmatrix}0\\7\end{bmatrix}\)</span>，同样基向量<span class="math inline">\(j\)</span>通过两次变换移动到了<span class="math inline">\(\begin{bmatrix}-3\\2\end{bmatrix}\)</span>，即矩阵乘法结果为<span class="math inline">\(\begin{bmatrix}0&amp;-3\\7&amp;2\end{bmatrix}\)</span>。</p>
+<p>交换律：<span class="math inline">\(AB\not=BA\)</span> ,First rotation the shear doesn't equal to first shear then rotation</p>
+<p>结合律associativity：<span class="math inline">\((AB)C=A(BC)\)</span></p>
+<p>以上同样可以扩展到三维空间。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -265,7 +311,7 @@
           <div class="post-tags">
               <a href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag"># 数学</a>
               <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
-              <a href="/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" rel="tag"># 数学分析</a>
+              <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag"># 线性代数</a>
           </div>
 
         
@@ -274,13 +320,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/04/01/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/" rel="prev" title="写在前面">
-      <i class="fa fa-chevron-left"></i> 写在前面
+    <a href="/2020/04/02/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/" rel="prev" title="数学分析">
+      <i class="fa fa-chevron-left"></i> 数学分析
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/04/13/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80/" rel="next" title="线性代数基础">
-      线性代数基础 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -339,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#对数函数fleftxrightlog_ax当a取何值时fleftxright在x1处的导数为1"><span class="nav-number">1.</span> <span class="nav-text">对数函数\(f\left(x\right)&#x3D;log_ax\)，当\(a\)取何值时，\(f\left(x\right)\)在\(x&#x3D;1\)处的导数为1？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#两个特殊的极限"><span class="nav-number">2.</span> <span class="nav-text">两个特殊的极限</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#已知函数fxxxx0求fx的最小值"><span class="nav-number">3.</span> <span class="nav-text">已知函数\(f(x)&#x3D;x^x\)，\(x&gt;0\)，求\(f(x)\)的最小值。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#tyler公式"><span class="nav-number">4.</span> <span class="nav-text">Tyler公式</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#tyler公式的应用-计算ex"><span class="nav-number">4.1.</span> <span class="nav-text">Tyler公式的应用-&#x3D;&#x3D;计算$e^x$&#x3D;&#x3D;</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#积分的应用"><span class="nav-number">5.</span> <span class="nav-text">积分的应用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方向导数"><span class="nav-number">6.</span> <span class="nav-text">方向导数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#梯度"><span class="nav-number">7.</span> <span class="nav-text">梯度</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gamma函数是阶乘在实数上的推广"><span class="nav-number">8.</span> <span class="nav-text">\(\Gamma\)函数是阶乘在实数上的推广</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#凸函数"><span class="nav-number">9.</span> <span class="nav-text">凸函数</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#additon-and-multiplication"><span class="nav-number">1.</span> <span class="nav-text">Additon and multiplication</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-combination-span-and-basis-vectors"><span class="nav-number">2.</span> <span class="nav-text">Linear combination, span and basis vectors</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#linear-transformations-and-matrices"><span class="nav-number">3.</span> <span class="nav-text">Linear transformations and matrices</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#matrix-multiplication"><span class="nav-number">4.</span> <span class="nav-text">Matrix multiplication</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
